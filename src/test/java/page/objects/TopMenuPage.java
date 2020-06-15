@@ -40,7 +40,6 @@ public class TopMenuPage {
     @FindBy(name = "submitSearch")
     WebElement submitSearch;
 
-    private WebDriver driver;
 
     public TopMenuPage(){
         PageFactory.initElements(DriverManager.getWebDriver(), this);
