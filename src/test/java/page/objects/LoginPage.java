@@ -31,9 +31,9 @@ public class LoginPage {
     WebElement submitLoginButton;
 
     @FindBy (xpath = "//*[@id='create_account_error']/ol/li")
-    WebElement existingEmailWarning;
+    WebElement creationEmailWarning;
 
-    @FindBy (xpath = "//*[@id='center_column']/div[1]/ol/li")
+    @FindBy (id = "//*[@id='center_column']/div[1]/ol/li")
     WebElement incorrectLoginPasswordWarning;
 
     public LoginPage(){
@@ -76,8 +76,8 @@ public class LoginPage {
     }
 
     public String getWarningMessageAboutExistingEmail(){
-        WaitForElement.waitForElementsIsVisible(existingEmailWarning);
-        String warningText = existingEmailWarning.getText();
+        WaitForElement.waitForElementsIsVisible(creationEmailWarning);
+        String warningText = creationEmailWarning.getText();
         logger.info("Returned warning message: " + warningText);
         return warningText;
     }

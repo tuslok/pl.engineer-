@@ -87,7 +87,7 @@ public class TopMenuPage {
         logger.info("Clicked on 'T-Shirt' button");
     }
 
-    public void clickOnSearchQueryButton(String word){
+    public void typeOnSearchQueryButton(String word){
         WaitForElement.waitUntilElementsIsClickable(searchQuery);
         searchQuery.sendKeys(word);
         logger.info("Typed the fraze: " + word);

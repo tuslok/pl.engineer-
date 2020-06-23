@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverManager {
 
-    private static final BrowserType BROWSER_TYPE = BrowserType.FIREFOX;
+    private static final BrowserType BROWSER_TYPE = BrowserType.CHROME;
     private static WebDriver driver;
 
     private DriverManager(){
@@ -18,7 +18,7 @@ public class DriverManager {
         if (driver == null){
             //System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
             //driver = new ChromeDriver();
-            driver = BrowserFactory.getBrowser(BrowserType.FIREFOX);
+            driver = BrowserFactory.getBrowser(BROWSER_TYPE);
         }
 
         return driver;
