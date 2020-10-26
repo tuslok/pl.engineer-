@@ -10,7 +10,7 @@ import waits.WaitForElement;
 
 public class WomenHomePage {
 
-    private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getLogger(WomenHomePage.class);
 
     @FindBy(xpath = "//*[@id='categories_block_left']/div/ul/li[1]/span")
     WebElement TopsExtensionButton;

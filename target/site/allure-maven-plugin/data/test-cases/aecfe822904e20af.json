@@ -1,0 +1,221 @@
+{
+  "uid" : "aecfe822904e20af",
+  "name" : "asUserWantToRetrievePasswordNotUsingEmail",
+  "fullName" : "tests.FailedRetrievePassword.asUserWantToRetrievePasswordNotUsingEmail",
+  "historyId" : "f2d2df03539f8cc3ac4a6673fd30b00d",
+  "time" : {
+    "start" : 1603317770883,
+    "stop" : 1603317773841,
+    "duration" : 2958
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1603317761224,
+      "stop" : 1603317761226,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1603317761227,
+      "stop" : 1603317770877,
+      "duration" : 9650
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Maximizing browser window",
+      "time" : {
+        "start" : 1603317764597,
+        "stop" : 1603317766754,
+        "duration" : 2157
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php",
+      "time" : {
+        "start" : 1603317766754,
+        "stop" : 1603317770877,
+        "duration" : 4123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php?controller=password",
+      "time" : {
+        "start" : 1603317770883,
+        "stop" : 1603317771897,
+        "duration" : 1014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php?controller=password"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Email Field To Log In ",
+      "time" : {
+        "start" : 1603317771898,
+        "stop" : 1603317772047,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on 'Retrieve password' button",
+      "time" : {
+        "start" : 1603317772047,
+        "stop" : 1603317773711,
+        "duration" : 1664
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Getting warning message about no email address assigned to account",
+      "time" : {
+        "start" : 1603317773711,
+        "stop" : 1603317773841,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1603317773844,
+      "stop" : 1603317775474,
+      "duration" : 1630
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FailedRetrievePassword"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FailedRetrievePassword"
+  }, {
+    "name" : "testMethod",
+    "value" : "asUserWantToRetrievePasswordNotUsingEmail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All automationpractice.com Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Failed Retrieve password Tests on Chrome"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FailedRetrievePassword"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JOCV0F2"
+  }, {
+    "name" : "thread",
+    "value" : "15132@DESKTOP-JOCV0F2.TestNG-tests-3(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "CHROME"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aecfe822904e20af.json",
+  "parameterValues" : [ "CHROME" ]
+}

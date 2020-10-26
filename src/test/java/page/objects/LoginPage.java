@@ -1,16 +1,14 @@
 package page.objects;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import driver.DriverManager;
 import waits.WaitForElement;
 
-public class LoginPage {
-
-    Logger logger = LogManager.getRootLogger();
+public class LoginPage extends BasePage{
 
     @FindBy(id="email_create")
     WebElement emailToCreationField;
@@ -30,63 +28,79 @@ public class LoginPage {
     @FindBy(id = "SubmitLogin")
     WebElement submitLoginButton;
 
-    @FindBy (xpath = "//*[@id='create_account_error']/ol/li")
-    WebElement creationEmailWarning;
+    @FindBy (xpath = "//*[@id='center_column']/div[1]/ol/li")
+    WebElement warningMessageLogIn;
 
-    @FindBy (id = "//*[@id='center_column']/div[1]/ol/li")
-    WebElement incorrectLoginPasswordWarning;
+    @FindBy(xpath = "//*[@id='create_account_error']/ol/li")
+    WebElement warningMessageRegister;
 
     public LoginPage(){
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    public void typeEmailAddressToCreateAccount(String email){
+    @Step("Type into Email Field {email}")
+    public LoginPage typeEmailAddressToCreateAccount(String emailCustomer){
         WaitForElement.waitForElementsIsVisible(emailToCreationField);
-        emailToCreationField.sendKeys(email);
-        logger.info("Typed e-mail address: '" + email + "' in order to register customer");
+        emailToCreationField.sendKeys(emailCustomer);
+        log().info("Typed e-mail address: {}", emailCustomer);
+        return this;
     }
 
-    public void clickOnSubmitCreateAnAccountButton(){
+    @Step("Click on Create Button")
+    public RegisterPage clickOnSubmitCreateAnAccountButton(){
         WaitForElement.waitUntilElementsIsClickable(submitCreateAccountButton);
-        submitCreateAccountButton.click();
-        logger.info("Clicked on 'Create an account' button");
+        submitCreateAccountButton.sendKeys(Keys.ENTER);
+        log().info("Clicked on 'Create an account' button");
+        return new RegisterPage();
     }
 
-    public void typeEmailLogin(String email){
+    @Step("Type into Email Field To Log In {email}")
+    public LoginPage typeEmailLogin(String email){
         WaitForElement.waitForElementsIsVisible(emailToCreationField);
         emailToLogInField.sendKeys(email);
-        logger.info("Typed e-mail addres '" + email + "' in order to log in");
+        log().info("Typed e-mail address to log in {}", email);
+        return this;
     }
 
-    public void typePassword(String password){
+    @Step("Type into Password Field {email}")
+    public LoginPage typePassword(String password){
         WaitForElement.waitForElementsIsVisible(passwordField);
         passwordField.sendKeys(password);
-        logger.info("Type password '" + password + "' in order to log in");
+        log().info("Typed password {}", password);
+        return this;
     }
 
-    public void clickOnRetrievingPasswordButton(){
+    @Step("Click on Retrieve Password Button")
+    public PasswordPage clickOnRetrievingPasswordButton(){
         WaitForElement.waitUntilElementsIsClickable(retrievingPasswordButton);
         retrievingPasswordButton.click();
-        logger.info("Clicked on 'Forgot your password?' button");
+        log().info("Clicked on 'Forgot your password?' button");
+        return new PasswordPage();
     }
-    
-    public void clickOnSubmitLoginButton(){
+
+    @Step("Click on Submit Log In Button")
+    public WelcomePage clickOnSubmitLoginButton(){
         WaitForElement.waitUntilElementsIsClickable(submitLoginButton);
-        submitLoginButton.click();
+        submitLoginButton.sendKeys(Keys.ENTER);
+        log().info("Clicked on 'Login' button");
+        return new WelcomePage();
     }
 
-    public String getWarningMessageAboutExistingEmail(){
-        WaitForElement.waitForElementsIsVisible(creationEmailWarning);
-        String warningText = creationEmailWarning.getText();
-        logger.info("Returned warning message: " + warningText);
-        return warningText;
+    @Step("Getting warning message during log in")
+    public String getWarningMessageLogIn(){
+        WaitForElement.waitForElementsIsVisible(warningMessageLogIn);
+        String warningTextLogIn = warningMessageLogIn.getText();
+        log().info("Returned warning message: " + warningTextLogIn);
+        return warningTextLogIn;
     }
 
-    public String getWarningMessageAboutIncorrectEmailOrPassword(){
-        WaitForElement.waitForElementsIsVisible(incorrectLoginPasswordWarning);
-        String warningText = incorrectLoginPasswordWarning.getText();
-        logger.info("Returned warning message: " +warningText);
-        return warningText;
+    @Step("")
+    public String getWarningMessageRegister(){
+        WaitForElement.waitForElementsIsVisible(warningMessageRegister);
+        String warningTextRegister = warningMessageRegister.getText();
+        log().info("Returned warning message: " + warningTextRegister);
+        return warningTextRegister;
     }
+
 
 }

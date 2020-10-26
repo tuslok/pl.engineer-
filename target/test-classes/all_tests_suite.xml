@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All automationpractice.com Tests" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="utils.testng.listeners.TestListener"></listener>
+        <listener class-name="utils.testng.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <test name="Failed Login Tests on Firefox" >
+    <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="tests.FailedLoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Login Tests on Chrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.FailedLoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Login Tests on IE">
+        <parameter name="browser" value="IE"/>
+        <classes>
+            <class name="tests.FailedLoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Register Tests on Chrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.FailedRegisterTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Register Tests on Firefox">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="tests.FailedRegisterTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Register Tests on IE">
+        <parameter name="browser" value="IE"/>
+        <classes>
+            <class name="tests.FailedRegisterTests"/>
+        </classes>
+    </test>
+
+    <test name="Failed Retrieve password Tests on Chrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.FailedRetrievePassword"/>
+        </classes>
+    </test>
+
+    <test name="Failed Retrieve password Tests on Firefox">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="tests.FailedRetrievePassword"/>
+        </classes>
+    </test>
+
+    <test name="Failed Retrieve password Tests on IE">
+        <parameter name="browser" value="IE"/>
+        <classes>
+            <class name="tests.FailedRetrievePassword"/>
+        </classes>
+    </test>
+
+</suite>

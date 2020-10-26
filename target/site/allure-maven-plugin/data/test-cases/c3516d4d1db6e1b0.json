@@ -1,0 +1,450 @@
+{
+  "uid" : "c3516d4d1db6e1b0",
+  "name" : "asUserWantToRegisterNotUsingCity",
+  "fullName" : "tests.FailedRegisterTests.asUserWantToRegisterNotUsingCity",
+  "historyId" : "c832f5406c855ffcb81534480120ff6b",
+  "time" : {
+    "start" : 1603317562423,
+    "stop" : 1603317570282,
+    "duration" : 7859
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1603317521283,
+      "stop" : 1603317521285,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1603317552694,
+      "stop" : 1603317562419,
+      "duration" : 9725
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Maximizing browser window",
+      "time" : {
+        "start" : 1603317555827,
+        "stop" : 1603317558005,
+        "duration" : 2178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php",
+      "time" : {
+        "start" : 1603317558005,
+        "stop" : 1603317562418,
+        "duration" : 4413
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation",
+      "time" : {
+        "start" : 1603317562424,
+        "stop" : 1603317563579,
+        "duration" : 1155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Email Field {email}",
+      "time" : {
+        "start" : 1603317563580,
+        "stop" : 1603317563827,
+        "duration" : 247
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "emailCustomer",
+        "value" : "mark1_smith1@google.pl"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on Create Button",
+      "time" : {
+        "start" : 1603317563827,
+        "stop" : 1603317564113,
+        "duration" : 286
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on Mr tittle button",
+      "time" : {
+        "start" : 1603317564114,
+        "stop" : 1603317566431,
+        "duration" : 2317
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into First Name Field Mark",
+      "time" : {
+        "start" : 1603317566431,
+        "stop" : 1603317566828,
+        "duration" : 397
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstName",
+        "value" : "Mark"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Last Name Field Smith",
+      "time" : {
+        "start" : 1603317566828,
+        "stop" : 1603317567085,
+        "duration" : 257
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "lastName",
+        "value" : "Smith"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Password Field password",
+      "time" : {
+        "start" : 1603317567086,
+        "stop" : 1603317567302,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "password"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Select day of birth 5",
+      "time" : {
+        "start" : 1603317567302,
+        "stop" : 1603317567422,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dayOfBirth",
+        "value" : "5"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Select month of birth October",
+      "time" : {
+        "start" : 1603317567423,
+        "stop" : 1603317567557,
+        "duration" : 134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "monthOfBirth",
+        "value" : "October"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Select year of birth 1983",
+      "time" : {
+        "start" : 1603317567557,
+        "stop" : 1603317567668,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "yearOfBirth",
+        "value" : "1983"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Company Address Part 1 Field Water Street 63",
+      "time" : {
+        "start" : 1603317567669,
+        "stop" : 1603317567904,
+        "duration" : 235
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "firstPartOfAddress",
+        "value" : "Water Street 63"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Select state Idaho",
+      "time" : {
+        "start" : 1603317567904,
+        "stop" : 1603317568075,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "state",
+        "value" : "Idaho"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Postal Code Field 46964",
+      "time" : {
+        "start" : 1603317568076,
+        "stop" : 1603317568240,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "postalCode",
+        "value" : "46964"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Country Field United States",
+      "time" : {
+        "start" : 1603317568240,
+        "stop" : 1603317568356,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "country",
+        "value" : "United States"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Type into Mobile Phone Field 123-467-654",
+      "time" : {
+        "start" : 1603317568356,
+        "stop" : 1603317568546,
+        "duration" : 190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "mobilePhone",
+        "value" : "123-467-654"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on Submit button",
+      "time" : {
+        "start" : 1603317568547,
+        "stop" : 1603317570189,
+        "duration" : 1642
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Getting error message",
+      "time" : {
+        "start" : 1603317570189,
+        "stop" : 1603317570282,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1603317570285,
+      "stop" : 1603317571016,
+      "duration" : 731
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "asUserWantToRegisterNotUsingCity"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All automationpractice.com Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Failed Register Tests on Chrome"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JOCV0F2"
+  }, {
+    "name" : "thread",
+    "value" : "15132@DESKTOP-JOCV0F2.TestNG-tests-3(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "CHROME"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3516d4d1db6e1b0.json",
+  "parameterValues" : [ "CHROME" ]
+}

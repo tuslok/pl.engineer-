@@ -1,0 +1,601 @@
+[ {
+  "uid" : "e6b3084a9c8bdd8a",
+  "name" : "asUserWantToRegisterNotUsingState",
+  "time" : {
+    "start" : 1603317690783,
+    "stop" : 1603317696995,
+    "duration" : 6212
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "b415c02725ff351f",
+  "name" : "asUserWantToLogInWithoutPassword",
+  "time" : {
+    "start" : 1603317515130,
+    "stop" : 1603317520588,
+    "duration" : 5458
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "27c9918afb95516b",
+  "name" : "asUserWantToRegisterUsingInvalidPostalCode",
+  "time" : {
+    "start" : 1603317999431,
+    "stop" : 1603318013200,
+    "duration" : 13769
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "209d90ede500b3e7",
+  "name" : "asUserWantToRegisterNotUsingCity",
+  "time" : {
+    "start" : 1603317586401,
+    "stop" : 1603317592642,
+    "duration" : 6241
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "8a66929cb3a653ef",
+  "name" : "asUserWantToRegisterNotUsingAddress",
+  "time" : {
+    "start" : 1603317544371,
+    "stop" : 1603317551948,
+    "duration" : 7577
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "8c9cab6bcf771190",
+  "name" : "asUserWantToRegisterNotUsingState",
+  "time" : {
+    "start" : 1603317886903,
+    "stop" : 1603317902912,
+    "duration" : 16009
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a61f197dbd79d60b",
+  "name" : "asUserWantToLogInWithIncorrectPassword",
+  "time" : {
+    "start" : 1603317498355,
+    "stop" : 1603317501957,
+    "duration" : 3602
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bfff25e4fb4cb80f",
+  "name" : "asUserWantToRegisterNotUsingPassword",
+  "time" : {
+    "start" : 1603317851420,
+    "stop" : 1603317865403,
+    "duration" : 13983
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "768b2976baf2ddc9",
+  "name" : "asUserWantToRetrievePasswordNotUsingEmail",
+  "time" : {
+    "start" : 1603317790013,
+    "stop" : 1603317792035,
+    "duration" : 2022
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1734ad4df46e60c",
+  "name" : "asUserWantToRegisterNotUsingCountry",
+  "time" : {
+    "start" : 1603317714601,
+    "stop" : 1603317728722,
+    "duration" : 14121
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "272799762edca5b0",
+  "name" : "asUserWantToRegisterNotUsingAddress",
+  "time" : {
+    "start" : 1603317568905,
+    "stop" : 1603317575274,
+    "duration" : 6369
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "aecfe822904e20af",
+  "name" : "asUserWantToRetrievePasswordNotUsingEmail",
+  "time" : {
+    "start" : 1603317770883,
+    "stop" : 1603317773841,
+    "duration" : 2958
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9192070bfb8bf176",
+  "name" : "asUserWantToRegisterUsingInvalidPostalCode",
+  "time" : {
+    "start" : 1603317757386,
+    "stop" : 1603317765150,
+    "duration" : 7764
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "7e2b90265b74661d",
+  "name" : "asUserWantToRegisterNotUsingAddress",
+  "time" : {
+    "start" : 1603317578312,
+    "stop" : 1603317598634,
+    "duration" : 20322
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "aad51a9906ded778",
+  "name" : "asUserWantToLogInWithoutEmail",
+  "time" : {
+    "start" : 1603317512565,
+    "stop" : 1603317515613,
+    "duration" : 3048
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9038c877f817e945",
+  "name" : "asUserWantToLogInWithoutEmailAndPassword",
+  "time" : {
+    "start" : 1603317506550,
+    "stop" : 1603317510535,
+    "duration" : 3985
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b5e1751db606b5f9",
+  "name" : "asUserWantToRegisterNotUsingPassword",
+  "time" : {
+    "start" : 1603317688428,
+    "stop" : 1603317694438,
+    "duration" : 6010
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "19d42c56f8926985",
+  "name" : "asUserWantToRegisterWithoutEmail",
+  "time" : {
+    "start" : 1603317756749,
+    "stop" : 1603317760562,
+    "duration" : 3813
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4b37b1b92c288ff5",
+  "name" : "asUserWantToRegisterNotUsingState",
+  "time" : {
+    "start" : 1603317709329,
+    "stop" : 1603317715062,
+    "duration" : 5733
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "20ff70a4c677b342",
+  "name" : "asUserWantToRetrievePasswordNotUsingEmail",
+  "time" : {
+    "start" : 1603317806788,
+    "stop" : 1603317811491,
+    "duration" : 4703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec89a5f5222931b1",
+  "name" : "asUserWantToRegisterUsingIncorrectEmailFormat",
+  "time" : {
+    "start" : 1603317725106,
+    "stop" : 1603317727105,
+    "duration" : 1999
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c3516d4d1db6e1b0",
+  "name" : "asUserWantToRegisterNotUsingCity",
+  "time" : {
+    "start" : 1603317562423,
+    "stop" : 1603317570282,
+    "duration" : 7859
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6e5f96167f1eaf4",
+  "name" : "asUserWantToRegisterNotUsingCountry",
+  "time" : {
+    "start" : 1603317618434,
+    "stop" : 1603317625849,
+    "duration" : 7415
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "3ac0b9e94cef61a4",
+  "name" : "asUserWantToLogInWithoutEmail",
+  "time" : {
+    "start" : 1603317512313,
+    "stop" : 1603317514939,
+    "duration" : 2626
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "97a5bce66870d772",
+  "name" : "asUserWantToRegisterNotUsingCity",
+  "time" : {
+    "start" : 1603317639536,
+    "stop" : 1603317661835,
+    "duration" : 22299
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "b076989cd9dc9bb2",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectEmail",
+  "time" : {
+    "start" : 1603317816112,
+    "stop" : 1603317820663,
+    "duration" : 4551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5168f92acc79e8b",
+  "name" : "asUserWantToRegisterUsingInvalidDateOfBirth",
+  "time" : {
+    "start" : 1603317720662,
+    "stop" : 1603317726892,
+    "duration" : 6230
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6f4c7c09456d113a",
+  "name" : "asUserWantToRegisterNotUsingFirstName",
+  "time" : {
+    "start" : 1603317653364,
+    "stop" : 1603317660191,
+    "duration" : 6827
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "30bd0210cc8ffe6d",
+  "name" : "asUserWantToLogInWithoutEmail",
+  "time" : {
+    "start" : 1603317495302,
+    "stop" : 1603317501784,
+    "duration" : 6482
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e9be4220ce3e0782",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectEmail",
+  "time" : {
+    "start" : 1603317801500,
+    "stop" : 1603317803657,
+    "duration" : 2157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a792e6a6a4367e3",
+  "name" : "asUserWantToRegisterWithoutEmail",
+  "time" : {
+    "start" : 1603318016642,
+    "stop" : 1603318019889,
+    "duration" : 3247
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b48eb67d0ee72f1a",
+  "name" : "asUserWantToLogInWithIncorrectPassword",
+  "time" : {
+    "start" : 1603317481845,
+    "stop" : 1603317490456,
+    "duration" : 8611
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "118895099a37983d",
+  "name" : "asUserTryToRegisterWithExistingEmail",
+  "time" : {
+    "start" : 1603317531236,
+    "stop" : 1603317533767,
+    "duration" : 2531
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2861714cadfeff75",
+  "name" : "asUserWantToLogInWithoutEmailAndPassword",
+  "time" : {
+    "start" : 1603317526232,
+    "stop" : 1603317529347,
+    "duration" : 3115
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a9e567f15194d6f9",
+  "name" : "asUserWantToLogInWithIncorrectPassword",
+  "time" : {
+    "start" : 1603317497263,
+    "stop" : 1603317500915,
+    "duration" : 3652
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d47a4121634dc3c9",
+  "name" : "asUserWantToRegisterNotUsingFirstName",
+  "time" : {
+    "start" : 1603317637526,
+    "stop" : 1603317644170,
+    "duration" : 6644
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c7d5b4433ca87671",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectSampleOfEmail",
+  "time" : {
+    "start" : 1603317813849,
+    "stop" : 1603317816879,
+    "duration" : 3030
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bdadd1df7605b653",
+  "name" : "asUserWantToRegisterNotUsingFirstName",
+  "time" : {
+    "start" : 1603317733382,
+    "stop" : 1603317756002,
+    "duration" : 22620
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8cd8033f98d67c67",
+  "name" : "asUserWantToRegisterNotUsingLastName",
+  "time" : {
+    "start" : 1603317653985,
+    "stop" : 1603317661836,
+    "duration" : 7851
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "330258e9e37659ea",
+  "name" : "asUserTryToRegisterWithExistingEmail",
+  "time" : {
+    "start" : 1603317554761,
+    "stop" : 1603317557231,
+    "duration" : 2470
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1d6e62c51fd7215f",
+  "name" : "asUserWantToRegisterUsingIncorrectEmailFormat",
+  "time" : {
+    "start" : 1603317708385,
+    "stop" : 1603317710820,
+    "duration" : 2435
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "434f7c6a825f4777",
+  "name" : "asUserWantToLogInWithIncorrectEmail",
+  "time" : {
+    "start" : 1603317455393,
+    "stop" : 1603317458197,
+    "duration" : 2804
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e6aad8dbc65f3583",
+  "name" : "asUserWantToLogInWithIncorrectEmail",
+  "time" : {
+    "start" : 1603317455935,
+    "stop" : 1603317458795,
+    "duration" : 2860
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c83b6fb90ac9c18",
+  "name" : "asUserTryToRegisterWithExistingEmail",
+  "time" : {
+    "start" : 1603317549600,
+    "stop" : 1603317555291,
+    "duration" : 5691
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "691cfa3abcbf355b",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectEmail",
+  "time" : {
+    "start" : 1603317784615,
+    "stop" : 1603317786966,
+    "duration" : 2351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11b3c9b71d871994",
+  "name" : "asUserWantToRegisterUsingInvalidDateOfBirth",
+  "time" : {
+    "start" : 1603317947840,
+    "stop" : 1603317961735,
+    "duration" : 13895
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "fc3d32c5d32a9a69",
+  "name" : "asUserWantToLogInWithoutPassword",
+  "time" : {
+    "start" : 1603317541369,
+    "stop" : 1603317544746,
+    "duration" : 3377
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3d0eac64274615df",
+  "name" : "asUserWantToRegisterUsingInvalidDateOfBirth",
+  "time" : {
+    "start" : 1603317737096,
+    "stop" : 1603317746431,
+    "duration" : 9335
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "563b36a4880f9707",
+  "name" : "asUserWantToRegisterUsingInvalidPostalCode",
+  "time" : {
+    "start" : 1603317737034,
+    "stop" : 1603317746140,
+    "duration" : 9106
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e616ce670cd28185",
+  "name" : "asUserWantToLogInWithIncorrectEmail",
+  "time" : {
+    "start" : 1603317449592,
+    "stop" : 1603317455733,
+    "duration" : 6141
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d97ac23875160343",
+  "name" : "asUserWantToLogInWithoutEmailAndPassword",
+  "time" : {
+    "start" : 1603317527500,
+    "stop" : 1603317531263,
+    "duration" : 3763
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "bb8262581a710ccf",
+  "name" : "asUserWantToRegisterNotUsingCountry",
+  "time" : {
+    "start" : 1603317637085,
+    "stop" : 1603317643140,
+    "duration" : 6055
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "3579fc7cafdb6085",
+  "name" : "asUserWantToRegisterNotUsingPassword",
+  "time" : {
+    "start" : 1603317672005,
+    "stop" : 1603317680544,
+    "duration" : 8539
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e8c9e35c9f8ddc8c",
+  "name" : "asUserWantToRegisterUsingIncorrectEmailFormat",
+  "time" : {
+    "start" : 1603317906313,
+    "stop" : 1603317910552,
+    "duration" : 4239
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1245fd22ba02bcd1",
+  "name" : "asUserWantToRegisterWithoutEmail",
+  "time" : {
+    "start" : 1603317777150,
+    "stop" : 1603317779412,
+    "duration" : 2262
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d25bbb684c3d0bed",
+  "name" : "asUserWantToLogInWithoutPassword",
+  "time" : {
+    "start" : 1603317540367,
+    "stop" : 1603317543975,
+    "duration" : 3608
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a25963cad1f63199",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectSampleOfEmail",
+  "time" : {
+    "start" : 1603317799269,
+    "stop" : 1603317801249,
+    "duration" : 1980
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b520cabfd0e822d7",
+  "name" : "asUserWantToRegisterNotUsingLastName",
+  "time" : {
+    "start" : 1603317798146,
+    "stop" : 1603317812098,
+    "duration" : 13952
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "6ef379037db0e2d8",
+  "name" : "asUserWantToRegisterNotUsingLastName",
+  "time" : {
+    "start" : 1603317671016,
+    "stop" : 1603317678417,
+    "duration" : 7401
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "15cee5037b3b3a31",
+  "name" : "asUserWantToRetrievePasswordUsingIncorrectSampleOfEmail",
+  "time" : {
+    "start" : 1603317824445,
+    "stop" : 1603317828087,
+    "duration" : 3642
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

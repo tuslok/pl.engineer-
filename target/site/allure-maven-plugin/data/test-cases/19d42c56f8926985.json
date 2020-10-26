@@ -1,0 +1,205 @@
+{
+  "uid" : "19d42c56f8926985",
+  "name" : "asUserWantToRegisterWithoutEmail",
+  "fullName" : "tests.FailedRegisterTests.asUserWantToRegisterWithoutEmail",
+  "historyId" : "61e82ea48f97eb2f1bf3fff037ecc304",
+  "time" : {
+    "start" : 1603317756749,
+    "stop" : 1603317760562,
+    "duration" : 3813
+  },
+  "description" : "The goal of this test is to log in not using email and checking if warning message is displayed",
+  "descriptionHtml" : "<p>The goal of this test is to log in not using email and checking if warning message is displayed</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1603317521283,
+      "stop" : 1603317521285,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1603317746871,
+      "stop" : 1603317756745,
+      "duration" : 9874
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Maximizing browser window",
+      "time" : {
+        "start" : 1603317750132,
+        "stop" : 1603317752334,
+        "duration" : 2202
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php",
+      "time" : {
+        "start" : 1603317752334,
+        "stop" : 1603317756744,
+        "duration" : 4410
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Navigating to URL: http://automationpractice.com/index.php?controller=authentication&back=my-account",
+      "time" : {
+        "start" : 1603317756750,
+        "stop" : 1603317758163,
+        "duration" : 1413
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pageUrl",
+        "value" : "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Click on Create Button",
+      "time" : {
+        "start" : 1603317758163,
+        "stop" : 1603317758362,
+        "duration" : 199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getWarningMessageRegister",
+      "time" : {
+        "start" : 1603317758362,
+        "stop" : 1603317760562,
+        "duration" : 2200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1603317760564,
+      "stop" : 1603317761219,
+      "duration" : 655
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "asUserWantToRegisterWithoutEmail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All automationpractice.com Tests"
+  }, {
+    "name" : "suite",
+    "value" : "Failed Register Tests on Chrome"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FailedRegisterTests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JOCV0F2"
+  }, {
+    "name" : "thread",
+    "value" : "15132@DESKTOP-JOCV0F2.TestNG-tests-3(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "CHROME"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19d42c56f8926985.json",
+  "parameterValues" : [ "CHROME" ]
+}

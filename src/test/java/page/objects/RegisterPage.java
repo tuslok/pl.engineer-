@@ -1,15 +1,17 @@
 package page.objects;
 
+import driver.DriverManager;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import waits.WaitForElement;
 
-public class RegisterPage {
-
-    Logger logger = LogManager.getRootLogger();
+public class RegisterPage extends BasePage{
 
     @FindBy (id = "id_gender1")
     WebElement mrTittleField;
@@ -86,144 +88,215 @@ public class RegisterPage {
     @FindBy(id = "submitAccount")
     WebElement submitRegisterButton;
 
-    public void clickOnMrTittleField(){
-        WaitForElement.waitUntilElementsIsClickable(mrTittleField);
-        mrTittleField.click();
-        logger.info("Clicked on Mr tittle field");
+    @FindBy(xpath = "//*[@id=\"center_column\"]/div/ol/li")
+    WebElement errorMessage;
+
+    public RegisterPage(){
+        PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    public void clickOnMrsTittleField(){
+    @Step("Click on Mr tittle button")
+    public RegisterPage clickOnMrTittleField(){
+        WaitForElement.waitForElementsIsVisible(mrTittleField);
+        mrTittleField.click();
+        log().info("Clicked on Mr tittle field");
+        return this;
+    }
+
+    @Step("Click on Mrs tittle button")
+    public RegisterPage clickOnMrsTittleField(){
         WaitForElement.waitUntilElementsIsClickable(mrsTittleField);
         mrsTittleField.click();
-        logger.info("Clicked on Mrs tittle field");
+        log().info("Clicked on Mrs tittle field");
+        return this;
     }
 
-    public void typeCustomerFirstName(String firstName){
-        WaitForElement.waitForElementsIsVisible(customerFirstNameField);
+    @Step("Type into First Name Field {firstName}")
+    public RegisterPage typeCustomerFirstName(String firstName){
+        WaitForElement.waitUntilElementsIsClickable(customerFirstNameField);
         customerFirstNameField.sendKeys(firstName);
-        logger.info("Typed customer first name: " + firstName);
+        log().info("Typed customer first name: " + firstName);
+        return this;
     }
 
-    public void typeCustomerLastName(String lastName){
+    @Step("Type into Last Name Field {lastName}")
+    public RegisterPage typeCustomerLastName(String lastName){
         WaitForElement.waitForElementsIsVisible(customerLastNameField);
         customerLastNameField.sendKeys(lastName);
-        logger.info("Typed customer last name: " + lastName);
+        log().info("Typed customer last name: " + lastName);
+        return this;
     }
 
-    public void typeCustomerEmailAddress(String email){
+    @Step("Type into Email Field {email}")
+    public RegisterPage typeCustomerEmailAddress(String email){
         WaitForElement.waitForElementsIsVisible(customerEmailField);
         customerEmailField.sendKeys(email);
-        logger.info("Typed customer email address: " + email);
+        log().info("Typed customer email address: " + email);
+        return this;
     }
 
-    public void typeCustomerPasswordField(String password){
+    @Step("Type into Password Field {password}")
+    public RegisterPage typeCustomerPasswordField(String password){
         WaitForElement.waitForElementsIsVisible(customerPasswordField);
         customerPasswordField.sendKeys(password);
-        logger.info("Typed customer password: " + password);
+        log().info("Typed customer password: " + password);
+        return this;
     }
 
-    public void selectCustomerDayOfBirthDropDown(){
-        // TO DO
+    @Step("Select day of birth {dayOfBirth}")
+    public RegisterPage selectCustomerDayOfBirthDropDown(String dayOfBirth){
+        customerDayOfBirthDropDown.sendKeys(dayOfBirth);
+        log().info("Selected day: " + dayOfBirth);
+        return this;
     }
 
-    public void selectCustomerMonthOfBirthDropDown(){
-        // TO DO
+    @Step("Select month of birth {monthOfBirth}")
+    public RegisterPage selectCustomerMonthOfBirthDropDown(String monthOfBirth){
+        customerMonthOfBirthDropDown.sendKeys(monthOfBirth);
+        log().info("Selected month: " + monthOfBirth);
+        return this;
     }
 
-    public void selectCustomerYearOfBirthDropDown(){
-        // TO DO
+    @Step("Select year of birth {yearOfBirth}")
+    public RegisterPage selectCustomerYearOfBirthDropDown(String yearOfBirth){
+        customerYearOfBirthDropDown.sendKeys(yearOfBirth);
+        log().info("Selected year: " + yearOfBirth);
+        return this;
     }
 
-    public void clickOnCustomerNewsletter(){
-        WaitForElement.waitUntilElementsIsClickable(customerNewsletter);
+    @Step("Click on Newsletter button")
+    public RegisterPage clickOnCustomerNewsletter(){
         customerNewsletter.click();
-        logger.info("Clicked on customer newsletter field");
+        log().info("Clicked on customer newsletter field");
+        return this;
     }
 
-    public void clickOnCustomerSpecialOffers(){
-        WaitForElement.waitUntilElementsIsClickable(customerSpecialOffers);
+    @Step("Click on Special Offers button")
+    public RegisterPage clickOnCustomerSpecialOffers(){
         customerSpecialOffers.click();
-        logger.info("Clicked on special offers field");
+        log().info("Clicked on special offers field");
+        return this;
     }
 
-    public void typeAddressFirstNameField(String addressFirstName){
+    @Step("Type into First Name Field {addressFirstName}")
+    public RegisterPage typeAddressFirstNameField(String addressFirstName){
         WaitForElement.waitForElementsIsVisible(addressFirstNameField);
+        addressFirstNameField.clear();
         addressFirstNameField.sendKeys(addressFirstName);
-        logger.info("Typed first name in address part: " + addressFirstName);
+        log().info("Typed first name in address part: " + addressFirstName);
+        return this;
     }
 
-    public void typeAddressLastNameField(String addressLastName){
+    @Step("Type into Last Name Field {addressLastName}")
+    public RegisterPage typeAddressLastNameField(String addressLastName){
         WaitForElement.waitForElementsIsVisible(addressLastNameField);
+        addressLastNameField.clear();
         addressLastNameField.sendKeys(addressLastName);
-        logger.info("Typed last name in address part " + addressLastName);
+        log().info("Typed last name in address part: " + addressLastName);
+        return this;
     }
 
-    public void typeAddressCompanyField(String addressCompany){
+    @Step("Type into Company Field {addressCompany}")
+    public RegisterPage typeAddressCompanyField(String addressCompany){
         WaitForElement.waitForElementsIsVisible(addressCompanyField);
         addressCompanyField.sendKeys(addressCompany);
-        logger.info("Typed address company in address part: " + addressCompany);
+        log().info("Typed address company in address part: " + addressCompany);
+        return this;
     }
 
-    public void typeAddressFirstPart(String firstPartOfAddress){
+    @Step("Type into Company Address Part 1 Field {firstPartOfAddress}")
+    public RegisterPage typeAddressFirstPart(String firstPartOfAddress){
         WaitForElement.waitForElementsIsVisible(addressFirstPart);
-        addressFirstPart.sendKeys();
-        logger.info("Typed first part of address in address part: " + firstPartOfAddress);
+        addressFirstPart.sendKeys(firstPartOfAddress);
+        log().info("Typed first part of address in address part: " + firstPartOfAddress);
+        return this;
     }
 
-    public void typeAddressSecondPart(String secondPartOfAddress){
+    @Step("Type into Company Address Part 2 Field {secondPartOfAddress}")
+    public RegisterPage typeAddressSecondPart(String secondPartOfAddress){
         WaitForElement.waitForElementsIsVisible(addressSecondPart);
-        addressSecondPart.sendKeys();
-        logger.info("Typed second part of address in address part: " + secondPartOfAddress);
+        addressSecondPart.sendKeys(secondPartOfAddress);
+        log().info("Typed second part of address in address part: " + secondPartOfAddress);
+        return this;
     }
 
-    public void typeAddressCityField(String addressCity){
+    @Step("Type into Company City Field {addressCity}")
+    public RegisterPage typeAddressCityField(String addressCity){
         WaitForElement.waitForElementsIsVisible(addressCityField);
         addressCityField.sendKeys(addressCity);
-        logger.info("Typed city in address part: " + addressCity);
+        log().info("Typed city in address part: " + addressCity);
+        return this;
     }
 
-    public void selectAddressStateField(String state){
-
+    @Step("Select state {state}")
+    public RegisterPage selectAddressStateField(String state){
+        Select stateAddressDropDown = new Select(addressStateField);
+        stateAddressDropDown.selectByVisibleText(state);
+        log().info("Selected state: " + state);
+        return this;
     }
 
-    public void typeAddressPostalCodeField(String postalCode){
+    @Step("Type into Postal Code Field {postalCode}")
+    public RegisterPage typeAddressPostalCodeField(String postalCode){
         WaitForElement.waitForElementsIsVisible(addressPostalCodeField);
         addressPostalCodeField.sendKeys(postalCode);
-        logger.info("Typed postal code in address part: " + postalCode);
+        log().info("Typed postal code in address part: " + postalCode);
+        return this;
     }
 
-    public void selectAddressCountryField(){
-        // TO DO
+    @Step("Type into Country Field {country}")
+    public RegisterPage selectAddressCountryField(String country){
+        addressCountryField.sendKeys(country);
+        log().info("Selected country: " + country);
+        return this;
     }
 
-    public void typeAdditionalInformationField(String additionalInformation){
+    @Step("Type into Country Field {country}")
+    public RegisterPage typeAdditionalInformationField(String additionalInformation){
         WaitForElement.waitForElementsIsVisible(additionalInformationField);
         additionalInformationField.sendKeys(additionalInformation);
-        logger.info("Typed additional information in address: " + additionalInformation);
+        log().info("Typed additional information in address: " + additionalInformation);
+        return this;
     }
 
-    public void typeHomePhoneField(String homePhone){
+    @Step("Type into Home Phone Field {homePhone}")
+    public RegisterPage typeHomePhoneField(String homePhone){
         WaitForElement.waitForElementsIsVisible(homePhoneField);
         homePhoneField.sendKeys(homePhone);
-        logger.info("Typed home phone in address part: " + homePhone);
+        log().info("Typed home phone in address part: " + homePhone);
+        return this;
     }
 
-    public void typeMobilePhoneField(String mobilePhone){
+    @Step("Type into Mobile Phone Field {mobilePhone}")
+    public RegisterPage typeMobilePhoneField(String mobilePhone){
         WaitForElement.waitForElementsIsVisible(mobilePhoneField);
         mobilePhoneField.sendKeys(mobilePhone);
-        logger.info("Typed mobile phone in address part: " + mobilePhone);
+        log().info("Typed mobile phone in address part: " + mobilePhone);
+        return this;
     }
 
-    public void typeAddressAliasField(String alias){
+    @Step("Type into Alias Field {alias}")
+    public RegisterPage typeAddressAliasField(String alias){
         WaitForElement.waitForElementsIsVisible(addressAliasField);
         addressAliasField.sendKeys(alias);
-        logger.info("Typed address alias in address part: " + alias);
+        log().info("Typed address alias in address part: " + alias);
+        return this;
     }
 
-    public void clickOnSubmitRegisterButton(){
+    @Step("Click on Submit button")
+    public WelcomePage clickOnSubmitRegisterButton(){
         WaitForElement.waitUntilElementsIsClickable(submitRegisterButton);
-        submitRegisterButton.click();
-        logger.info("Clicked on submit button");
+        submitRegisterButton.sendKeys(Keys.ENTER);
+        log().info("Clicked on submit button");
+        return new WelcomePage();
+    }
+
+    @Step("Getting error message")
+    public String gettingErrorMessage(){
+        WaitForElement.waitForElementsIsVisible(errorMessage);
+        String textMessage = errorMessage.getText();
+        log().info("Returned error message: " + textMessage);
+        return textMessage;
     }
 
 }
