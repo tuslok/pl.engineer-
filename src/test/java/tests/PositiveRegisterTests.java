@@ -5,7 +5,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.Test;
-import page.objects.BasePage;
 import page.objects.LoginPage;
 import page.objects.RegisterPage;
 import page.objects.WelcomePage;

@@ -7,13 +7,13 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.Test;
 import page.objects.LoginPage;
 
+
 import static org.testng.Assert.assertEquals;
 import static navigation.ApplicationURLs.LOGIN_URL;
 
 public class FailedLoginTests extends TestBase{
 
 
-    @Test
     @Description("The goal of this test is to log in using incorrect email and checking of warning message is displayed")
     @Severity(SeverityLevel.BLOCKER)
     public void asUserWantToLogInWithIncorrectEmail(){
