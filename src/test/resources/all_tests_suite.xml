@@ -7,6 +7,27 @@
         <listener class-name="utils.testng.listeners.AnnotationTransformer"></listener>
     </listeners>
 
+    <test name="Successfully Login Tests on Firefox" >
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="tests.PositiveLoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Successfully Login Tests on Chrome" >
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.PositiveLoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Successfully Login Tests on IE" >
+        <parameter name="browser" value="IE"/>
+        <classes>
+            <class name="tests.PositiveLoginTests"/>
+        </classes>
+    </test>
+
     <test name="Failed Login Tests on Firefox" >
     <parameter name="browser" value="FIREFOX"/>
         <classes>
@@ -52,21 +73,21 @@
     <test name="Failed Retrieve password Tests on Chrome">
         <parameter name="browser" value="CHROME"/>
         <classes>
-            <class name="tests.FailedRetrievePassword"/>
+            <class name="tests.FailedRetrievePasswordTests"/>
         </classes>
     </test>
 
     <test name="Failed Retrieve password Tests on Firefox">
         <parameter name="browser" value="FIREFOX"/>
         <classes>
-            <class name="tests.FailedRetrievePassword"/>
+            <class name="tests.FailedRetrievePasswordTests"/>
         </classes>
     </test>
 
     <test name="Failed Retrieve password Tests on IE">
         <parameter name="browser" value="IE"/>
         <classes>
-            <class name="tests.FailedRetrievePassword"/>
+            <class name="tests.FailedRetrievePasswordTests"/>
         </classes>
     </test>
 

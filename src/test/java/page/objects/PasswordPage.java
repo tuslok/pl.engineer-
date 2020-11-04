@@ -12,7 +12,6 @@ import waits.WaitForElement;
 
 public class PasswordPage extends BasePage{
 
-    private Logger logger = LogManager.getLogger(PasswordPage.class);
 
     @FindBy(id = "email")
     WebElement emailAddress;
@@ -34,7 +33,7 @@ public class PasswordPage extends BasePage{
     public PasswordPage typeAddressEmail(String email){
         //WaitForElement.waitForElementsIsVisible(emailAddress);
         emailAddress.sendKeys(email);
-        logger.info("Typed e-mail address to retrieve password {}", email);
+        log().info("Typed e-mail address to retrieve password {}", email);
         return this;
     }
 
@@ -42,7 +41,7 @@ public class PasswordPage extends BasePage{
     public PasswordPage clickOnRetrievePasswordButton(){
         //WaitForElement.waitUntilElementsIsClickable(retrievePasswordButton);
         retrievePasswordButton.sendKeys(Keys.ENTER);
-        logger.info("Clicked on 'Retrieve password' button");
+        log().info("Clicked on 'Retrieve password' button");
         return this;
     }
 
@@ -50,7 +49,7 @@ public class PasswordPage extends BasePage{
     public String getWarningMessageAboutIncorrectEmailOrPassword(){
         WaitForElement.waitUntilElementsIsClickable(errorMessage);
         String warningText = errorMessage.getText();
-        logger.info("Returned warning message: " +warningText);
+        log().info("Returned warning message: " +warningText);
         return warningText;
     }
 
@@ -58,7 +57,7 @@ public class PasswordPage extends BasePage{
     public String getInformationMessageAboutSendingNewPassword(){
         WaitForElement.waitForElementsIsVisible(informationMessage);
         String informationText = informationMessage.getText();
-        logger.info("Returned information message: " + informationText);
+        log().info("Returned information message: " + informationText);
         return informationText;
     }
 

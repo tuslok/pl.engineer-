@@ -33,6 +33,12 @@ public class PositiveLoginTests extends TestBase{
         assertEquals(titleOfPage, "My account - My Store");
         welcomePage.
                 clickOnLogOutButton();
+
+        try {
+            Thread.sleep(9999);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

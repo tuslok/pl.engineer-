@@ -8,8 +8,7 @@ import org.testng.annotations.Test;
 import page.objects.LoginPage;
 import page.objects.RegisterPage;
 
-import static navigation.ApplicationURLs.LOGIN_URL;
-import static navigation.ApplicationURLs.ACCOUNT_CREATION;
+import static navigation.ApplicationURLs.*;
 import static org.testng.Assert.assertEquals;
 
 public class FailedRegisterTests extends TestBase {
@@ -65,7 +64,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.BLOCKER)
     public void asUserWantToRegisterNotUsingFirstName(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -96,7 +95,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingLastName(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -127,7 +126,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingPassword(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -158,7 +157,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterUsingInvalidDateOfBirth(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -189,7 +188,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingAddress(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -220,7 +219,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingCity(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -251,7 +250,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingState(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -282,7 +281,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterUsingInvalidPostalCode(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.
@@ -313,7 +312,7 @@ public class FailedRegisterTests extends TestBase {
     @Description("")
     @Severity(SeverityLevel.MINOR)
     public void asUserWantToRegisterNotUsingCountry(){
-        DriverUtils.navigateToPage(ACCOUNT_CREATION);
+        DriverUtils.navigateToPage(ACCOUNT_CREATION_URL);
 
         LoginPage loginPage = new LoginPage();
         loginPage.

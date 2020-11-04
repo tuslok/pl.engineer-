@@ -4,6 +4,7 @@ import driver.DriverManager;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,7 +12,6 @@ import waits.WaitForElement;
 
 public class WelcomePage extends BasePage{
 
-    private Logger logger = LogManager.getLogger(WelcomePage.class);
 
     @FindBy(xpath = "//*[@id='header']/div[2]/div/div/nav/div[1]/a/span")
     WebElement customerLoggedButton;
@@ -27,15 +27,16 @@ public class WelcomePage extends BasePage{
     public String getNameAndSurnameLoggedUser(){
         WaitForElement.waitUntilElementsIsClickable(customerLoggedButton);
         String nameAndSurname = customerLoggedButton.getText();
-        logger.info("Returned name and surname {}: " + nameAndSurname);
+        log().info("Returned name and surname {}: " + nameAndSurname);
         return nameAndSurname;
     }
 
     @Step ("")
-    public void clickOnLogOutButton(){
+    public WelcomePage clickOnLogOutButton(){
         WaitForElement.waitUntilElementsIsClickable(logOutButton);
-        logOutButton.click();
-        logger.info("Clicked on 'Log out' button. ");
+        logOutButton.sendKeys(Keys.ENTER);
+        log().info("Clicked on 'Log out' button. ");
+        return new WelcomePage();
     }
 
     @Step("Getting title of page")

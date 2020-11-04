@@ -56,7 +56,7 @@ public class LoginPage extends BasePage{
 
     @Step("Type into Email Field To Log In {email}")
     public LoginPage typeEmailLogin(String email){
-        WaitForElement.waitForElementsIsVisible(emailToCreationField);
+        WaitForElement.waitForElementsIsVisible(emailToLogInField);
         emailToLogInField.sendKeys(email);
         log().info("Typed e-mail address to log in {}", email);
         return this;
